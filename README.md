@@ -28,7 +28,6 @@ Before using this server, ensure you have the following:
 There are two main ways to use this server:
 
 ### Option 1: Using npx (Recommended for quick use)
-## Installation & Usage (via npx)
 
 The easiest way to run this server is using `npx`, which downloads and runs the package without needing a permanent installation.
 
@@ -59,9 +58,8 @@ Replace `"YOUR_GEMINI_API_KEY"` with your actual Google Gemini API key.
 If you want to modify the code or run it directly from the source:
 
 1.  **Clone the repository:**
-    *(Replace the URL with the actual repository URL when available)*
     ```bash
-    git clone <YOUR_REPOSITORY_URL>
+    git clone https://github.com/minbang930/Youtube-Vision-MCP.git
     cd youtube-vision
     ```
 
