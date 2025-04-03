@@ -2,6 +2,11 @@
 
 [![NPM version](https://img.shields.io/npm/v/youtube-vision)](https://www.npmjs.com/package/youtube-vision) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![smithery badge](https://smithery.ai/badge/@minbang930/youtube-vision-mcp)](https://smithery.ai/mcp/@minbang930/youtube-vision-mcp)
+
+<a href="https://glama.ai/mcp/servers/@minbang930/Youtube-Vision-MCP">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@minbang930/Youtube-Vision-MCP/badge" alt="Youtube Vision MCP" />
+</a>
 
 MCP (Model Context Protocol) server that utilizes the Google Gemini Vision API to interact with YouTube videos. It allows users to get descriptions, summaries, answers to questions, and extract key moments from YouTube videos.
 
@@ -26,6 +31,14 @@ Before using this server, ensure you have the following:
 ## Installation & Usage
 
 There are two main ways to use this server:
+
+### Installing via Smithery
+
+To install youtube-vision-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/mcp/@minbang930/youtube-vision-mcp):
+
+```bash
+npx -y @smithery/cli install @minbang930/youtube-vision-mcp --client claude
+```
 
 ### Option 1: Using npx (Recommended for quick use)
 
@@ -95,30 +108,7 @@ Answers a question about the video or provides a general description if no quest
     *   `youtube_url` (string, required): The URL of the YouTube video.
     *   `question` (string, optional): The specific question to ask about the video. If omitted, a general description is generated.
 *   **Output:** Text containing the answer or description.
-*   **Example Usage (MCP Client):**
-    ```xml
-    <use_mcp_tool>
-      <server_name>youtube-vision</server_name>
-      <tool_name>ask_about_youtube_video</tool_name>
-      <arguments>
-      {
-        "youtube_url": "https://www.youtube.com/watch?v=VIDEO_ID",
-        "question": "What is the main topic discussed around 1:30?" 
-      }
-      </arguments>
-    </use_mcp_tool>
-    ```
-    ```xml
-    <use_mcp_tool>
-      <server_name>youtube-vision</server_name>
-      <tool_name>ask_about_youtube_video</tool_name>
-      <arguments>
-      {
-        "youtube_url": "https://www.youtube.com/watch?v=VIDEO_ID"
-      }
-      </arguments>
-    </use_mcp_tool>
-    ```
+
 
 ### 2. `summarize_youtube_video`
 
@@ -128,19 +118,7 @@ Generates a summary of a given YouTube video.
     *   `youtube_url` (string, required): The URL of the YouTube video.
     *   `summary_length` (string, optional): Desired summary length ('short', 'medium', 'long'). Defaults to 'medium'.
 *   **Output:** Text containing the video summary.
-*   **Example Usage (MCP Client):**
-    ```xml
-    <use_mcp_tool>
-      <server_name>youtube-vision</server_name>
-      <tool_name>summarize_youtube_video</tool_name>
-      <arguments>
-      {
-        "youtube_url": "https://www.youtube.com/watch?v=VIDEO_ID",
-        "summary_length": "short"
-      }
-      </arguments>
-    </use_mcp_tool>
-    ```
+
 
 ### 3. `extract_key_moments`
 
@@ -150,19 +128,7 @@ Extracts key moments (timestamps and descriptions) from a given YouTube video.
     *   `youtube_url` (string, required): The URL of the YouTube video.
     *   `number_of_moments` (integer, optional): Number of key moments to extract. Defaults to 3.
 *   **Output:** Text describing the key moments with timestamps.
-*   **Example Usage (MCP Client):**
-    ```xml
-    <use_mcp_tool>
-      <server_name>youtube-vision</server_name>
-      <tool_name>extract_key_moments</tool_name>
-      <arguments>
-      {
-        "youtube_url": "https://www.youtube.com/watch?v=VIDEO_ID",
-        "number_of_moments": 5 
-      }
-      </arguments>
-    </use_mcp_tool>
-    ```
+
 
 ### 4. `list_supported_models`
 
@@ -170,14 +136,6 @@ Lists available Gemini models that support the `generateContent` method (fetched
 
 *   **Input:** None
 *   **Output:** Text listing the supported model names.
-*   **Example Usage (MCP Client):**
-    ```xml
-    <use_mcp_tool>
-      <server_name>youtube-vision</server_name>
-      <tool_name>list_supported_models</tool_name>
-      <arguments>{}</arguments>
-    </use_mcp_tool>
-    ```
 
 
 ## Important Notes
