@@ -2,6 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/youtube-vision)](https://www.npmjs.com/package/youtube-vision) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![smithery badge](https://smithery.ai/badge/@minbang930/youtube-vision-mcp)](https://smithery.ai/mcp/@minbang930/youtube-vision-mcp)
 
 MCP (Model Context Protocol) server that utilizes the Google Gemini Vision API to interact with YouTube videos. It allows users to get descriptions, summaries, answers to questions, and extract key moments from YouTube videos.
 
@@ -26,6 +27,14 @@ Before using this server, ensure you have the following:
 ## Installation & Usage
 
 There are two main ways to use this server:
+
+### Installing via Smithery
+
+To install youtube-vision-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/mcp/@minbang930/youtube-vision-mcp):
+
+```bash
+npx -y @smithery/cli install @minbang930/youtube-vision-mcp --client claude
+```
 
 ### Option 1: Using npx (Recommended for quick use)
 
