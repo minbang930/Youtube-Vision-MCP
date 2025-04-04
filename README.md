@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/youtube-vision)](https://www.npmjs.com/package/youtube-vision) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![smithery badge](https://smithery.ai/badge/@minbang930/youtube-vision-mcp)](https://smithery.ai/mcp/@minbang930/youtube-vision-mcp)
+[![smithery badge](https://smithery.ai/badge/@minbang930/youtube-vision-mcp)](https://smithery.ai/server/@minbang930/youtube-vision-mcp)
 
 <a href="https://glama.ai/mcp/servers/@minbang930/Youtube-Vision-MCP">
   <img width="380" height="200" src="https://glama.ai/mcp/servers/@minbang930/Youtube-Vision-MCP/badge" alt="Youtube Vision MCP" />
